@@ -52,9 +52,9 @@ public class ParserImpl implements Parser {
 
     /* JADX WARN: Multi-variable type inference failed */
     private void loadPlaylistContinuation(String str, String str2, List<PlaylistVideoDetails> list, String str3) throws YoutubeException {
-        Response<String> responseDownloadWebpage = this.downloader.downloadWebpage((RequestWebpage) ((RequestWebpage) ((RequestWebpage) new RequestWebpage("https://www.youtube.com/youtubei/v1/browse?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8", "POST", new JSONObject().fluentPut("context", new JSONObject().fluentPut("client", new JSONObject().fluentPut("clientName", "WEB").fluentPut("clientVersion", "2.20201021.03.00"))).fluentPut("continuation", str).fluentPut("clickTracking", new JSONObject().fluentPut("clickTrackingParams", str2)).toJSONString()).header("X-YouTube-Client-Name", "1")).header("X-YouTube-Client-Version", str3)).header("Content-Type", "application/json"));
+        Response<String> responseDownloadWebpage = this.downloader.downloadWebpage((RequestWebpage) ((RequestWebpage) ((RequestWebpage) new RequestWebpage("https://www.youtube.com/youtubei/v1/browse?key=", "POST", new JSONObject().fluentPut("context", new JSONObject().fluentPut("client", new JSONObject().fluentPut("clientName", "WEB").fluentPut("clientVersion", "2.20201021.03.00"))).fluentPut("continuation", str).fluentPut("clickTracking", new JSONObject().fluentPut("clickTrackingParams", str2)).toJSONString()).header("X-YouTube-Client-Name", "1")).header("X-YouTube-Client-Version", str3)).header("Content-Type", "application/json"));
         if (!responseDownloadWebpage.mo13ok()) {
-            throw new YoutubeException.DownloadException(String.format("Could not load url: %s, exception: %s", "https://www.youtube.com/youtubei/v1/browse?key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8", responseDownloadWebpage.error().getMessage()));
+            throw new YoutubeException.DownloadException(String.format("Could not load url: %s, exception: %s", "https://www.youtube.com/youtubei/v1/browse?key=", responseDownloadWebpage.error().getMessage()));
         }
         try {
             JSONObject object = JSON.parseObject(responseDownloadWebpage.data());
