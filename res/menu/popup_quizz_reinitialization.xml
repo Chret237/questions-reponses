@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_delete_forever_32dp" android:id="@id/action_quizz_reinitialization_1" android:title="@string/lb_reinit_all_data" />
+    <item android:icon="@drawable/ic_delete_32dp" android:id="@id/action_quizz_reinitialization_2" android:title="@string/lb_delete_finish_quizz" />
+    <item android:icon="@drawable/ic_delete_32dp" android:id="@id/action_quizz_reinitialization_3" android:title="@string/lb_delete_not_finish_quizz" />
+    <item android:icon="@drawable/ic_delete_32dp" android:id="@id/action_quizz_reinitialization_4" android:title="@string/lb_delete_spiritual_growth" />
+</menu>

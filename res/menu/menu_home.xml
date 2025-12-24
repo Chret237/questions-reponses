@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_quizz_end" android:title="@string/lb_menu_quizz_end" app:showAsAction="never" />
+    <item android:id="@id/action_quizz_not_end" android:title="@string/lb_menu_quizz_not_end" app:showAsAction="never" />
+    <item android:id="@id/action_quizz_growth" android:title="@string/lb_menu_spiritual_growth" app:showAsAction="never">
+        <menu>
+            <item android:icon="@drawable/ic_stars_bronze_32dp" android:enabled="false" android:id="@id/action_quizz_level_1" android:title="@string/lb_menu_quizz_level_1" />
+            <item android:icon="@drawable/ic_stars_bronze_32dp" android:enabled="false" android:id="@id/action_quizz_level_2" android:title="@string/lb_menu_quizz_level_2" />
+            <item android:icon="@drawable/ic_stars_bronze_32dp" android:enabled="false" android:id="@id/action_quizz_level_3" android:title="@string/lb_menu_quizz_level_3" />
+            <item android:icon="@drawable/ic_stars_bronze_32dp" android:enabled="false" android:id="@id/action_quizz_level_4" android:title="@string/lb_menu_quizz_level_4" />
+            <item android:icon="@drawable/ic_stars_silver_32dp" android:enabled="false" android:id="@id/action_quizz_level_5" android:title="@string/lb_menu_quizz_level_5" />
+            <item android:icon="@drawable/ic_stars_silver_32dp" android:enabled="false" android:id="@id/action_quizz_level_6" android:title="@string/lb_menu_quizz_level_6" />
+            <item android:icon="@drawable/ic_stars_gold_32dp" android:enabled="false" android:id="@id/action_quizz_level_7" android:title="@string/lb_menu_quizz_level_7" />
+            <item android:icon="@drawable/ic_stars_gold_32dp" android:enabled="false" android:id="@id/action_quizz_level_8" android:title="@string/lb_menu_quizz_level_8" />
+            <item android:icon="@drawable/ic_stars_diamond_32dp" android:enabled="false" android:id="@id/action_quizz_level_9" android:visible="false" android:title="@string/lb_menu_quizz_level_9" />
+            <item android:icon="@drawable/ic_stars_diamond_32dp" android:enabled="false" android:id="@id/action_quizz_level_10" android:visible="false" android:title="@string/lb_menu_quizz_level_10" />
+        </menu>
+    </item>
+</menu>

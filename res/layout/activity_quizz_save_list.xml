@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/main_content" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/appbar" android:background="@color/blueOpacityBg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" fab:layout_scrollFlags="enterAlways|scroll" fab:popupTheme="@style/AppTheme.PopupOverlay" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_5_dp" layout="@layout/quizz_navigation_list_header" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/numberPageLayout" android:background="@drawable/btn_orange_blue_dark" android:paddingLeft="@dimen/size_15_dp" android:paddingTop="@dimen/size_5_dp" android:paddingRight="@dimen/size_15_dp" android:paddingBottom="@dimen/size_5_dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/size_65_dp" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/text_size_15_sp" android:textColor="@color/colorWhite" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lb_question" />
+                <TextView android:textSize="@dimen/text_size_18_sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:layout_gravity="center" android:id="@id/numberPage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lb_nav_progress" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager android:id="@id/container" android:background="@color/blueOpacityBg" android:layout_width="fill_parent" android:layout_height="fill_parent" fab:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.github.clans.fab.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab_quizz_list_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/size_10_dp" android:src="@drawable/ic_arrow_right_32dp" fab:fab_colorNormal="@color/blueOpacity90" fab:fab_size="mini" fab:menu_colorPressed="@color/blueOpacity75" fab:menu_colorRipple="@color/blueOpacity90" />
+    <com.github.clans.fab.FloatingActionButton android:layout_gravity="start|bottom|center" android:id="@id/fab_quizz_list_previous" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/size_10_dp" android:src="@drawable/ic_arrow_left_32dp" fab:fab_colorNormal="@color/blueOpacity90" fab:fab_size="mini" fab:menu_colorPressed="@color/blueOpacity75" fab:menu_colorRipple="@color/blueOpacity90" />
+</android.support.design.widget.CoordinatorLayout>

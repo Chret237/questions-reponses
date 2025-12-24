@@ -1,0 +1,96 @@
+package android.support.constraint;
+
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.os.Build;
+import android.util.AttributeSet;
+
+/* loaded from: classes-dex2jar.jar:android/support/constraint/Barrier.class */
+public class Barrier extends ConstraintHelper {
+    public static final int BOTTOM = 3;
+    public static final int END = 6;
+    public static final int LEFT = 0;
+    public static final int RIGHT = 1;
+    public static final int START = 5;
+    public static final int TOP = 2;
+    private android.support.constraint.solver.widgets.Barrier mBarrier;
+    private int mIndicatedType;
+    private int mResolvedType;
+
+    public Barrier(Context context) {
+        super(context);
+        super.setVisibility(8);
+    }
+
+    public Barrier(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
+        super.setVisibility(8);
+    }
+
+    public Barrier(Context context, AttributeSet attributeSet, int i) {
+        super(context, attributeSet, i);
+        super.setVisibility(8);
+    }
+
+    public boolean allowsGoneWidget() {
+        return this.mBarrier.allowsGoneWidget();
+    }
+
+    public int getType() {
+        return this.mIndicatedType;
+    }
+
+    @Override // android.support.constraint.ConstraintHelper
+    protected void init(AttributeSet attributeSet) throws IllegalAccessException, IllegalArgumentException {
+        super.init(attributeSet);
+        this.mBarrier = new android.support.constraint.solver.widgets.Barrier();
+        if (attributeSet != null) {
+            TypedArray typedArrayObtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, C0019R.styleable.ConstraintLayout_Layout);
+            int indexCount = typedArrayObtainStyledAttributes.getIndexCount();
+            for (int i = 0; i < indexCount; i++) {
+                int index = typedArrayObtainStyledAttributes.getIndex(i);
+                if (index == C0019R.styleable.ConstraintLayout_Layout_barrierDirection) {
+                    setType(typedArrayObtainStyledAttributes.getInt(index, 0));
+                } else if (index == C0019R.styleable.ConstraintLayout_Layout_barrierAllowsGoneWidgets) {
+                    this.mBarrier.setAllowsGoneWidget(typedArrayObtainStyledAttributes.getBoolean(index, true));
+                }
+            }
+        }
+        this.mHelperWidget = this.mBarrier;
+        validateParams();
+    }
+
+    public void setAllowsGoneWidget(boolean z) {
+        this.mBarrier.setAllowsGoneWidget(z);
+    }
+
+    public void setType(int i) {
+        this.mIndicatedType = i;
+        this.mResolvedType = i;
+        if (Build.VERSION.SDK_INT < 17) {
+            int i2 = this.mIndicatedType;
+            if (i2 == 5) {
+                this.mResolvedType = 0;
+            } else if (i2 == 6) {
+                this.mResolvedType = 1;
+            }
+        } else {
+            if (1 == getResources().getConfiguration().getLayoutDirection()) {
+                int i3 = this.mIndicatedType;
+                if (i3 == 5) {
+                    this.mResolvedType = 1;
+                } else if (i3 == 6) {
+                    this.mResolvedType = 0;
+                }
+            } else {
+                int i4 = this.mIndicatedType;
+                if (i4 == 5) {
+                    this.mResolvedType = 0;
+                } else if (i4 == 6) {
+                    this.mResolvedType = 1;
+                }
+            }
+        }
+        this.mBarrier.setBarrierType(this.mResolvedType);
+    }
+}

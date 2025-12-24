@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/btn_book_summary" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_5_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_18_sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/nav_quizz_title" android:background="@color/colorPrimary" android:padding="@dimen/size_10_dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_5_dp" android:text="@string/lb_nav_title" />
+        <ImageButton android:id="@id/nav_quizz_arrow_back" android:background="@android:color/transparent" android:padding="@dimen/size_5_dp" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="@dimen/size_10_dp" android:src="@drawable/btn_arrow_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/lb_content_desc" />
+        <ImageButton android:id="@id/nav_quizz_item_delete" android:background="@android:color/transparent" android:padding="@dimen/size_5_dp" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="@dimen/size_10_dp" android:src="@drawable/btn_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/lb_content_desc" />
+    </RelativeLayout>
+</LinearLayout>

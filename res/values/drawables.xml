@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+    <item type="drawable" name="notification_template_icon_low_bg">#0cffffff</item>
+    <item type="drawable" name="APKTOOL_DUMMY_15" />
+    <item type="drawable" name="APKTOOL_DUMMY_4e" />
+    <item type="drawable" name="APKTOOL_DUMMY_50" />
+    <item type="drawable" name="APKTOOL_DUMMY_52" />
+    <item type="drawable" name="APKTOOL_DUMMY_85" />
+    <item type="drawable" name="APKTOOL_DUMMY_d3" />
+    <item type="drawable" name="APKTOOL_DUMMY_d4" />
+    <item type="drawable" name="APKTOOL_DUMMY_d5" />
+    <item type="drawable" name="APKTOOL_DUMMY_d6" />
+    <item type="drawable" name="APKTOOL_DUMMY_db" />
+</resources>

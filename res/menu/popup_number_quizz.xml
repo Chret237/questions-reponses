@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_total_10" android:title="@string/lb_total_10" app:showAsAction="ifRoom" />
+    <item android:id="@id/action_total_20" android:title="@string/lb_total_20" app:showAsAction="ifRoom" />
+    <item android:id="@id/action_total_30" android:title="@string/lb_total_30" app:showAsAction="ifRoom" />
+    <item android:id="@id/action_total_40" android:title="@string/lb_total_40" app:showAsAction="ifRoom" />
+    <item android:id="@id/action_total_50" android:title="@string/lb_total_50" app:showAsAction="ifRoom" />
+</menu>

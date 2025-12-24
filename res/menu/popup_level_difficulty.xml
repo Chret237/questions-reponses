@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_quizz_level_difficulty_1" android:title="@string/lb_level_difficulty_no_chrono" />
+    <item android:id="@id/action_quizz_level_difficulty_2" android:title="@string/lb_level_difficulty_very_easy" />
+    <item android:id="@id/action_quizz_level_difficulty_3" android:title="@string/lb_level_difficulty_easy" />
+    <item android:id="@id/action_quizz_level_difficulty_4" android:title="@string/lb_level_difficulty_normal" />
+    <item android:id="@id/action_quizz_level_difficulty_5" android:title="@string/lb_level_difficulty_difficult" />
+    <item android:id="@id/action_quizz_level_difficulty_6" android:title="@string/lb_level_difficulty_very_difficult" />
+</menu>

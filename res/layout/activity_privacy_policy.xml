@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <WebView android:id="@id/webview_privacy_policy" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/progress_privacy_policy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <com.github.clans.fab.FloatingActionButton android:id="@id/fab_privacy_policy_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/size_10_dp" android:src="@drawable/ic_fab_cancel_32dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" fab:backgroundTint="@color/colorAccentOpacity50" fab:fab_colorNormal="@color/colorAccent" fab:fab_label="@string/app_name" fab:fab_size="mini" fab:menu_colorNormal="@color/colorAccent" fab:menu_colorPressed="@color/colorAccentOpacity50" fab:menu_colorRipple="@color/colorAccent" fab:rippleColor="@color/colorAccent" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/item_linearlayout" android:background="@drawable/btn_orange" android:padding="@dimen/size_5_dp" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_5_dp" android:foreground="?android:selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/item_image" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/size_5_dp" android:src="@drawable/ic_quizz_lock_level_32dp" android:contentDescription="@string/lb_content_desc" />
+    <TextView style="@style/CustomVerticalLine" />
+    <include layout="@layout/item_quizz_save_title_ratinbar" />
+</LinearLayout>

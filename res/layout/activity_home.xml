@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/app_bar_home" />
+    <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/nav_drawer_content" android:background="@color/colorWhiteOpacity95" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:background="@color/blueOpacityBg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_5_dp" layout="@layout/quizz_navigation_header" />
+        <LinearLayout android:orientation="vertical" android:background="@color/blueOpacityBg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/quizzSaveRecyclerView" android:paddingLeft="@dimen/size_5_dp" android:paddingTop="@dimen/size_5_dp" android:paddingRight="@dimen/size_5_dp" android:paddingBottom="@dimen/size_130_dp" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

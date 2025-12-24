@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/form_contact" android:background="@color/blueOpacityBg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollview_contact" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_contact" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_18_sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/text_header_contact" android:paddingTop="@dimen/size_10_dp" android:paddingBottom="@dimen/size_10_dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lb_form_contact_us" />
+                <ImageButton android:id="@id/btn_close_contact" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_form_close" android:contentDescription="@string/lb_content_desc" android:layout_alignParentEnd="true" />
+                <Spinner android:id="@id/spinner_civility" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="34.0dip" android:layout_below="@id/text_header_contact" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:spinnerMode="dropdown" android:layout_marginStart="@dimen/size_10_dp" android:layout_marginEnd="@dimen/size_10_dp" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_15_sp" android:textColor="@color/blueOpacity75" android:gravity="start" android:id="@id/texte_contact_indicateur" android:padding="@dimen/size_10_dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lb_form_field_require" android:textAlignment="center" />
+            <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_5_dp">
+                <android.support.design.widget.TextInputEditText android:textSize="18.0sp" android:textColor="@color/colorPrimary" android:textColorHint="@color/blueOpacity75" android:id="@id/edittext_nom" android:padding="@dimen/size_5_dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_10_dp" android:hint="@string/lb_form_your_name" android:maxLines="1" android:inputType="textPersonName|textCapSentences" android:layout_marginStart="@dimen/size_10_dp" android:layout_marginEnd="@dimen/size_10_dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_5_dp">
+                <android.support.design.widget.TextInputEditText android:textSize="18.0sp" android:textColor="@color/colorPrimary" android:textColorHint="@color/blueOpacity75" android:id="@id/edittext_email" android:padding="@dimen/size_5_dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_10_dp" android:hint="@string/lb_form_your_email" android:maxLines="1" android:inputType="textEmailAddress" android:layout_marginStart="@dimen/size_10_dp" android:layout_marginEnd="@dimen/size_10_dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_5_dp">
+                <android.support.design.widget.TextInputEditText android:textSize="18.0sp" android:textColor="@color/colorPrimary" android:textColorHint="@color/blueOpacity75" android:id="@id/edittext_city" android:padding="@dimen/size_5_dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_10_dp" android:hint="@string/lb_form_your_city" android:maxLines="1" android:inputType="text" android:layout_marginStart="@dimen/size_10_dp" android:layout_marginEnd="@dimen/size_10_dp" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_10_dp">
+                <android.support.design.widget.TextInputLayout android:layout_gravity="fill_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="@dimen/size_5_dp" android:layout_weight="1.0">
+                    <android.support.design.widget.TextInputEditText android:textSize="18.0sp" android:textColor="@color/colorPrimary" android:textColorHint="@color/blueOpacity75" android:id="@id/edittexte_message" android:padding="@dimen/size_5_dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/lb_form_your_message" android:inputType="textCapSentences|textMultiLine" />
+                </android.support.design.widget.TextInputLayout>
+                <ImageButton android:id="@id/btn_validate" android:background="@android:color/transparent" android:layout_width="@dimen/size_65_dp" android:layout_height="@dimen/size_65_dp" android:src="@drawable/btn_form_validate" android:contentDescription="@string/lb_content_desc" android:layout_marginStart="@dimen/size_10_dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:id="@id/progress_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:progressBarStyle" />
+</RelativeLayout>

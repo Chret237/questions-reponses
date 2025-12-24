@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_phone_32dp" android:id="@id/action_menu_telephone" android:title="@string/lb_menu_telephone" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_whatsapp" android:id="@id/action_menu_whatsapp" android:title="@string/lb_menu_whatsapp" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_fab_contact_us_32dp" android:id="@id/action_menu_formulaire" android:title="@string/lb_menu_formulaire" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/item_linearlayout" android:background="@drawable/btn" android:padding="@dimen/size_5_dp" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_5_dp" android:foreground="?android:selectableItemBackground">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/item_image" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/size_5_dp" android:src="@mipmap/bible_closed" android:contentDescription="@string/lb_content_desc" />
+        <TextView style="@style/CustomVerticalLine" />
+        <TextView android:textSize="@dimen/text_size_18_sp" android:textColor="@color/colorPrimary" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/item_title" android:padding="@dimen/size_15_dp" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.v7.widget.CardView android:id="@id/item_cardview" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_25_dp">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/btn_book_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_5_dp">
+            <TextView android:textSize="@dimen/text_size_18_sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/title_summary" android:background="@color/colorPrimary" android:padding="@dimen/size_10_dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_5_dp" />
+            <TextView android:textSize="@dimen/text_size_18_sp" android:textColor="@color/colorPrimary" android:gravity="left" android:id="@id/detail_summary" android:padding="@dimen/size_5_dp" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

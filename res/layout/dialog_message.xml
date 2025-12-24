@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/blueOpacityBg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_18_sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_15_dp" />
+        <TextView android:textSize="@dimen/text_size_18_sp" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/msg_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size_5_dp" android:layout_marginBottom="@dimen/size_25_dp" android:layout_marginStart="@dimen/size_5_dp" android:layout_marginEnd="@dimen/size_5_dp" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/blueOpacity50" android:padding="@dimen/size_5_dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/colorWhite" android:id="@id/button_close" android:background="@drawable/btn_blue" android:padding="@dimen/size_10_dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/size_10_dp" android:text="@string/lb_fermer" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
